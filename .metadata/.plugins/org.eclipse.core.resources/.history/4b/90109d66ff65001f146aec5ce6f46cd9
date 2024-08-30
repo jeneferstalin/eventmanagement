@@ -1,0 +1,7 @@
+package com.luminar.entity;
+
+public class User {
+	private UserData data = new UserData();
+	
+
+}

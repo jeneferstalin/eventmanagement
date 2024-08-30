@@ -1,0 +1,44 @@
+package com.luminar.entity;
+
+public class User {
+	private Integer id;
+	private String userName;
+	private Long phoneNo;
+	private String address;
+
+	public User() {
+	}
+	
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+	public Long getPhoneNo() {
+		return phoneNo;
+	}
+
+	public void setPhoneNo(Long phoneNo) {
+		this.phoneNo = phoneNo;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+}

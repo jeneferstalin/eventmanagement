@@ -1,0 +1,22 @@
+package com.luminar.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import com.luminar.entity.User;
+import com.luminar.service.UserService;
+
+public class UserController {
+	
+	@Autowired
+    private UserService userService;
+	
+	 @PostMapping("/")
+	    public String registerUser(@RequestBody User user) {
+	        userService.registerUser(user);
+	        
+	        return "register successfully";
+	    }
+
+}

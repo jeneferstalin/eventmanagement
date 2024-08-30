@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> SPRINGS Eventmanagement</title>
+  <link rel="icon"  type="image/png" href="./Images/13.jpg"> 
+
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="icon" type="image/png" href="./Images/icon.jpg">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Kalnia+Glaze:wght@100..700&family=Lobster&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sevillana&family=Timmana&display=swap" rel="stylesheet">
+</head>
+
+<body>
+ <!-- nav -->
+ <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><h1 id="hed1">Spring Eventmanagement</h1></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+       
+        <li class="nav-item">
+          <a class="nav-link" href="#">Abuot Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Marriage events</a></li>
+            <li><a class="dropdown-item" href="#">Birthday events</a></li>
+            <li><a class="dropdown-item" href="#">Reunion</a></li>
+            <li><a class="dropdown-item" href="#">Graduation venu</a></li>
+            
+          </ul>
+        </li>
+       
+      </ul>
+     
+    </div>
+  </div>
+</nav>
+
+<!-- carousel -->
+<div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img height="500px" width="100%" src="./Images/e.jpg" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img height="500px" width="100%" src="./Images/f.jpg"  alt="...">
+    </div>
+    <div class="carousel-item">
+      <img height="500px" width="100%" src="./Images/g.jpg"  alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button> 
+<center>
+  <div class="card-img-overlay">
+    <div class="card-body text-light">
+      <div class="ammu">
+        <h1 id="it">Spring Eventmanagement</h1>
+        <p>Spring Event Management is your gateway to spectacular events in Cochin! Are you looking to turn your dream event into a mesmerizing reality? Look no further! Melodia Event Management is here to elevate your celebrations to new heights. With our exceptional expertise, we will provide the best event management in Kochi, and the most sought-after experiences are just a heartbeat away.</p> 
+       
+      </div>
+      <!-- <a href="#" class="btn-dark" role="button"></a> -->
+    </div>
+  </div>
+</center>
+</div>
+  
+<!-- card -->
+
+<div class="d-flex justify-content-evenly m-5">
+  <div class="card" style="width: 18rem;">
+    <img src="./Images/23.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"> <b>Unparalleled Creativity:</b></h5>
+      <p class="card-text">We have a tendency of creating captivating experiences that can blow anyone’s mind. The team of artists that we employ is distinctive, highly creative and curate unique surroundings while taking into account your preferences. We create magnificent settings that mix innovation and elegance to capture the essence of the theme.</p>
+      
+
+      <div class="  modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Items </h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+      
+            <div class="modal-body">
+              
+      
+              <div class="row ms-1 ">
+                <div class="col-2"><img  width="100px" height="100px" src="./Images/11.jpg" class="rounded-circle" alt="..."></div>
+              
+               <div class="col-2"><img  width="100px" height="100px" src="./Images/12.jpg" class="rounded-circle" alt="..."></div>
+               <div class="col-2"><img  width="100px" height="100px" src="./Images/14.jpg" class="rounded-circle" alt="..."></div>
+               <div class="col-2"><img  width="100px" height="100px" src="./Images/13.jpg" class="rounded-circle" alt="..."></div>
+               <div class="col-1"></div>
+              
+              
+               
+           
+            </div>
+              
+            
+               </div>
+      </div>
+          
+          </div>
+        </div>
+
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img src="./Images/21.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"> <b>Entertainment:</b></h5>
+      <p class="card-text">With the right entertainment, you can make your celebration feel even more special. We work with a carefully chosen group of outstanding artists to deliver fascinating entertainment that fits your event theme and mood, whether you’re looking for live music, DJs, wedding dancers in Kerala, or unusual performances. In order to provide a flawless and remarkable entertainment experience, our team of the best event managers in Kochi handles technical needs, lighting and sound setups, and artist coordination.
+        
+        </p>
+      
+   
+<!-- Scrollable modal -->
+
+<!-- Modal -->
+<div class="  modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel1">Spaces</h1>
+        <button  id="btn" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+       
+
+        <div class="row ms-1 ">
+          <div class="col-2"><img  width="100px" height="100px" src="./Images/24.jpg" class="rounded-circle" alt="..."></div>
+        
+         <div class="col-2"><img  width="100px" height="100px" src="./Images/25.jpg" class="rounded-circle" alt="..."></div>
+         <div class="col-2"><img  width="100px" height="100px" src="./Images/26.jpg" class="rounded-circle" alt="..."></div>
+        
+         <div class="col-2"><img  width="100px" height="100px" src="./Images/27.jpg" class="rounded-circle" alt="..."></div>
+         <div class="col-1"></div>
+         
+     
+      </div>
+        
+    
+         </div>
+
+
+  
+
+</div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div> 
+
+
+    </div>
+  </div>
+
+
+<!-- image -->
+<div class="row m-5 ">
+  <div class="col">
+      <h1><b>Best Event Management in Kochi:<br> A World of Possibilities </b></h1> <br>
+      <h4><b>Your favorite local restaurants
+      </b></h4><br>
+     <p> Tucked down in the center of Kerala, the city of Ernakulam is a thriving hub of culture. Its breathtaking backwaters, rich scenery, and historical charm make it the ideal setting for noteworthy events. Melodia Event Management Company harnesses the beauty of Cochin, infusing it into your celebrations and creating memories that will be cherished for a lifetime.</p>
+  </div>
+
+  <div class="col">
+        <img src="./Images/25.jpg" alt="">
+  </div>
+</div>
+
+
+<!-- 3 images (flip flops)-->
+
+
+
+
+
+ <div class="row m-5 ">
+   <div class="col ms-5 ">
+     <div class="flip-box">
+       <div class="flip-box-inner">
+         <div class="flip-box-front">
+           <img src="./Images/26.jpg" alt="" width="100%" height="200px">
+         </div>
+         <div id="btn" class="flip-box-back">
+          <h2>Available</h2>
+          <img src="./Images/27.jpg" alt="" width="250px" height="150px">
+         </div>
+       </div>
+     </div>
+    
+   </div>
+
+   <div class="col">
+     <div class="flip-box">
+       <div class="flip-box-inner">
+         <div class="flip-box-front">
+           <img src="./Images/28.jpg" alt="" width="100%" height="200px">
+         </div>
+         <div id="btn" class="flip-box-back">
+          <h2>Available</h2>
+          <img src="./Images/29.jpg" alt="" width="250px" height="150px">
+         </div>
+       </div>
+     </div>
+     
+   </div>
+
+   <div class="col">
+     <div class="flip-box">
+       <div class="flip-box-inner">
+         <div class="flip-box-front">
+           <img src="./Images/30.jpg" alt="" width="100%" height="200px">
+         </div>
+         <div id="btn" class="flip-box-back">
+          <h2>Available</h2>
+          <img src="./Images/31.jpg" alt="" width="250px" height="150px">
+         </div>
+       </div>
+     </div>
+    
+   </div>
+
+ </div>
+ 
+
+ <div class="row row1 m-5">
+  <div class="col ms-5">
+    <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <img src="./Images/5.jpg" alt="" width="100%" height="200px">
+        </div>
+        <div id="btn" class="flip-box-back">
+          <h2>Available</h2>
+          <img src="./Images/6.jpg" alt="" width="250px" height="150px">
+        </div>
+      </div>
+    </div>
+   
+  </div>
+
+  <div class="col">
+    <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <img src="./Images/7.jpg" alt="" width="100%" height="200px">
+        </div>
+        <div id="btn" class="flip-box-back ">
+          <h2>Available</h2>
+          <img src="./Images/8.jpg" alt="" width="250px" height="150px">
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+ 
+  <div class="col ">
+    <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <img src="./Images/9.jpg" alt="" width="100%" height="200px">
+        </div>
+        <div id="btn" class="flip-box-back ">
+          <h2>Available</h2>
+          <img src="./Images/one.jpg" alt="" width="250px" height="150px">
+          
+        </div>
+      </div>
+    </div>
+   
+  </div>
+
+</div>
+
+
+
+<div class="row m-5 ">
+  <div class="col">
+    <img src="./Images/two.jpg" alt="">
+  </div>
+
+  <div class="col">
+       <h2><b>Contact Spring Event Management Today!</b></h2>
+       <h3>Unparalleled Creativity:</h3>
+       <p>Ready to embark on an unforgettable journey? Contact Spring Event Management Company today, and let us weave magic into your upcoming event. Whether you have a clear vision in mind or need guidance to shape your ideas, our dedicated team is here to listen, plan, and execute an event that surpasses your wildest dreams.
+
+        Experience the excellence of best event management in Kochi deserves with Spring. Together, let’s create a symphony of unforgettable moments that will reverberate through time. Trust us to make your event an extraordinary masterpiece!
+        
+        Spring Event Management is the name that resonates with unparalleled creativity, flawless execution, and the commitment to transform your vision into reality. Let us be the conductors of your dream event. Contact us now!</p>
+
+     
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel"> Available Items</h1>
+        
+      </div>
+      <div class="modal-body">
+        <div class="row  ">
+          <div class="col-2"><img  width="100px" height="100px" src="./Images/10.jpg" class="rounded-circle" alt="..."></div>
+          <div class="col-2"><img  width="100px" height="100px" src="./Images/B.jpg" class="rounded-circle" alt="..."></div>
+        
+         <div class="col-2"><img  width="100px" height="100px" src="./Images/card.jpg" class="rounded-circle" alt="..."></div>
+         <div class="col-2"><img  width="100px" height="100px" src="./Images/img.jpg" class="rounded-circle" alt="..."></div>
+         <div class="col-1"></div>
+        
+        
+         
+     
+      </div>
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+        
+
+      </div>
+  </div>
+  
+</div>
+  <!-- 3 cards -->
+
+  <div class="container d-flex justify-content-evenly ">
+    <div class="card m-3">
+      <img width="300px" height="400px" src="https://b.zmtcdn.com/data/collections/75ca020d74c31670b0e58569c5facef0_1681538667.png" class="card-img" alt="">
+
+      <div class="card-img-overlay">
+        <div class="card-body text-light">
+          <div class="para ">8 Places for Art Lovers</div>
+          <!-- <a href="#" class="btn-dark" role="button">read more</a> -->
+        </div>
+      </div>
+    </div>
+
+   
+
+    <div class="card m-3">
+      <img width="300px" height="400px" src="./Images/16.jpg" class="card-img" alt="">
+
+      <div class="card-img-overlay">
+        <div class="card-body text-light">
+          <div class="para  ">
+          </div>
+          <!-- <a href="#" class="btn-dark" role="button"></a> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="card m-3">
+      <img width="300px" height="400px" src="./Images/21.jpg" class="card-img" alt="">
+
+      <div class="card-img-overlay">
+        <div class="card-body text-light">
+          <div class="para  "></div>
+          <a href="#" class="btn-dark" role="button"></a>
+        </div>
+      </div>
+    </div>
+     
+  </div>
+
+  <!-- price -->
+
+
+ 
+  
+      <div class="d-flex  justify-content-evenly m-5">
+        <div class="card  "  style="width: 18rem;">
+          <img height="300px" src="./Images/10.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+           
+          </div>
+        </div>
+
+        <div class="card  "  style="width: 18rem;">
+          <img height="300px" src="./Images/card.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            
+          </div>
+        </div>
+
+        <div class="card  "  style="width: 18rem;">
+          <img height="300px" src="./Images/13.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+           
+          </div>
+        </div>
+
+        <div class="card  "  style="width: 18rem;">
+          <img height="300px" src="./Images/15.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+           
+          </div>
+        </div>
+
+        
+        </div>
+
+
+        <div class="d-flex  justify-content-evenly m-5">
+          <div class="card  "  style="width: 18rem;">
+            <img height="300px" src="./Images/e.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+             
+            </div>
+          </div>
+  
+          <div class="card  "  style="width: 18rem;">
+            <img height="300px" src="./Images/f.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              
+            </div>
+          </div>
+  
+          <div class="card  "  style="width: 18rem;">
+            <img height="300px" src="./Images/g.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+             
+            </div>
+          </div>
+  
+          <div class="card  "  style="width: 18rem;">
+            <img height="300px" src="./Images/d.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+             
+            </div>
+          </div>
+  
+          
+          </div>
+  
+
+        
+
+        <div class="d-flex  justify-content-evenly m-5">
+          <div class="card  "  style="width: 18rem;">
+            <img height="300px" src="./Images/6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+             
+            </div>
+          </div>
+  
+          <div class="card  "  style="width: 18rem;">
+            <img height="300px" src="./Images/5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              
+            </div>
+          </div>
+  
+          <div class="card  "  style="width: 18rem;">
+            <img height="300px" src="./Images/8.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+             
+            </div>
+          </div>
+  
+          <div class="card  "  style="width: 18rem;">
+            <img height="300px" src="./Images/17.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+             
+            </div>
+          </div>
+  
+          
+          </div>
+      
+
+      
+  <!-- img3 card -->
+
+  <!-- <div class="pro">
+    <div class="main d-flex justify-content-evenly">
+       <div class="child"><img class="bike" width="200px" height="200px" src="./Images/5.jpg" alt="">
+        
+      </div>
+      
+
+       
+       <div class="child"><img class="home" width="150px" height="180px" src="./Images/8.jpg" alt=""> <br>
+        
+
+       <div class="child"><img class="phn" width="200px" height="250px" src="./Images/17.jpg" alt="">
+        
+      </div>
+    </div>
+ </div> -->
+
+    <section>
+      
+     
+
+
+      <div class="container">
+        <h2>Registration Form</h2>
+        <form action="#" th:action="@{/register}" th:object="${user}" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="userName" name="userName"  th:field="*{username}" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phoneNo" name="phoneNo" th:field="*{phoneNo}" placeholder="Enter your phone number" required>
+            </div>
+            <button type="submit">submit</button>
+        </form>
+    </div>
+    </section>
+  
+  
+  
+    
+ 
+
+
+
+
+    <!-- Other content of your webpage -->
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>Learn more about our mission, vision, and values.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: info@fooddeliveryapp.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                  <a href="https://www.facebook.com/"><img width="40px" height="40px" src="https://cdn.pixabay.com/photo/2021/06/15/12/51/facebook-6338507_1280.png" alt="facebook"></a>
+
+                  <a href="https://www.instagram.com/accounts/login/"><img width="30px" height="30px"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwH--J-ZMUg8puNfUxE6YXQi3yVHuAORDxow&s" alt=""></a>
+
+                  <a href="https://x.com/twitt_login"><img  width="30px" height="30px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSap0KYVPqMitj_bSk5nTzfzcbapxUH4ri0ilIP_97CcIrCgRq7atHwKptwr2t3k-2UZag&usqp=CAU" alt=""></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Food Delivery App. All rights reserved.</p>
+        </div>
+    </footer>
+    
+<!-- nav -->
+    <div  class=" sticky-top ">
+      <nav class="navbar  ">
+        <div class="container d-flex justify-content-center">
+          <a class="navbar-brand" href="#">
+           
+            <div class="m-3"><a href="https://www.facebook.com/"><img width="40px" height="40px" src="https://cdn3.iconfinder.com/data/icons/picons-social/57/46-facebook-512.png" alt=""></a></div> 
+    
+              <div class="m-3"><a href="https://www.instagram.com/accounts/login/"><img width="30px" height="30px"  src="https://cdn3.iconfinder.com/data/icons/transparent-on-dark-grey/500/icon-04-512.png" alt=""></a></div>
+              
+    
+             <div class="m-3">
+              <a href="https://x.com/twitt_login"><img  width="30px" height="30px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIiHFKQwFFnsBI8x32ghsrqb2vuoVVrFRIkA&s" alt=""></a>
+            </div> 
+
+            <div class="m-5 d-flex justify-content-center align-items-center">
+
+            </div>
+           
+           
+          
+        </div>
+      </nav>
+      
+    </div>
+
+
+
+</body>
+</html>

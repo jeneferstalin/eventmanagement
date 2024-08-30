@@ -1,0 +1,22 @@
+package com.luminar.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.luminar.entity.Admin;
+import com.luminar.repository.AdminRepository;
+
+@Service
+public class AdminService {
+	
+	
+	    @Autowired
+	    private AdminRepository adminRepository;
+	    
+	    public boolean authenticate(String userName,String password) {
+	    	Admin admin=adminRepository.findByUserName(userName);
+	    	return admin !=null&&admin.getPassword().equals(password);
+	    }
+
+	
+}
